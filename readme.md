@@ -3,9 +3,6 @@
 Afin de pourvoir installer et lancer l'application, il faut savoir utiliser les lignes de commandes
 https://windows.developpez.com/cours/ligne-commande/
 
-
-
-
 ## CONFIGURATION REQUISE
 
 - JRE installer sur l'ordinateur (v 1.8), attention la v 1.9 est déconseillée
@@ -21,7 +18,6 @@ https://nodejs.org/en/download/ (téléchargement)
 - Angular CLI (v1.6.5 +)
 lancer la ligne de commande "npm install @angular/cli" (nécéssite node.js)
 
-
 ## IMPORT DU PROJET
 
 Installer les prérequis si nécéssaire
@@ -29,9 +25,6 @@ Télécharger le dossier .zip du projet
 ou l'importer (voir ci dessous)
  - Lancer le gitBash à l'emplacement ou vous voulez importez le projet (click Droit "Git Bash Here")
  - Lancer la commande "git clone https://github.com/DethierY/GEDESAFT.git"
- 
- 
- 
  
 ## CONFIGURATION TECHNIQUE
 
@@ -41,9 +34,6 @@ Dedans se trouve fichier **application.properties**, il faut indiquer les inform
 
 Lancer le server sql, 
 importer la base de données (avec le fichier gedesaft.sql présent dans le dossier des diagrammes https://github.com/rudylps/diagrammes_gedesaft_v2.git)
-
-
-
 
 ## LANCEMENT DE L'APPLICATION
 
@@ -58,3 +48,15 @@ L'application étant séparée en deux parties, il faut les démarrer toutes les
       - mvn package -DskipTests
       - cd target
       - java -jar java-springboot-simplecrud-0.0.1-SNAPSHOT.jar"
+	  
+# L'UML
+
+Dans ce dossier vous pouvez trouver les différents diagrammes et tables qui nous ont servis pour la conception de notre application.
+Les diagrammes ont été réalisé pour la première version de GEDESAFT et peuvent ne plus correspondre exactement à l'actuelle application.
+
+## Les mockups
+
+- Pour lire le fichier **mockUp.bmpr**, il faut le programme Balsamiq
+https://balsamiq.com/
+- Ensuite, ouvrir **mockUp.bmpr**.
+Faire **Ctrl + F** afin de lancer le plein écran et les fonctionnalités d'enchainement des écrans matérialisants les hyperliens
