@@ -2,24 +2,22 @@
 
 ## Maquetter une application
 
-
-
-        ### Faire un diagramme USE CASE
-        https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/DiagrammeClasses.PNG
+### Faire un diagramme USE CASE
+![](DiagrammeClasses.PNG)
 		
-		### Faire un diagramme d'activité
+### Faire un diagramme d'activité
         
-        ### Faire un diagramme des classes
-        https://raw.githubusercontent.com/rudylps/diagrammes_gedesaft_v2/master/DiagrammeClasses.PNG
-        
-        
-        ### Identifier les acteurs d'un SI
+### Faire un diagramme des classes
+https://raw.githubusercontent.com/rudylps/diagrammes_gedesaft_v2/master/DiagrammeClasses.PNG
         
         
-        ### Dessiner des wireframe ou mockup (écrans)
+### Identifier les acteurs d'un SI
         
         
-        ### Modéliser l'enchainement des écrans
+### Dessiner des wireframe ou mockup (écrans)
+        
+        
+### Modéliser l'enchainement des écrans
         
         
         
