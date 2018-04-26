@@ -54,10 +54,9 @@ Cloner ou télécharger le dossier back-end https://github.com/DethierY/GEDESAFT
 Ce projet a été généré avec Angular CLI 1.6.5
 Cloner ou télécharger le dossier front-end https://github.com/milk42/FilRougeV2Front.git
 
-- Télécharger NodeJs https://nodejs.org/en/
 Dans le dossier du front, lancer une ligne de commande
  - npm install
- - ng server
+ - ng serve
  
 - Dans un navigateur internet, inscrire l'adresse http://localhost:4200/
 	
