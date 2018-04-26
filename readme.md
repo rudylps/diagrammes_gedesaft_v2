@@ -40,6 +40,7 @@ importer la base de données (avec le fichier gedesaft.sql présent dans le doss
 L'application étant séparée en deux parties, il faut les démarrer toutes les deux pour que l'application fonctionne
 
 ### Lancer l'application Springboot
+Cloner ou télécharger le dossier back-end https://github.com/DethierY/GEDESAFT.git
   
     Créer un .jar : 
     
@@ -49,6 +50,18 @@ L'application étant séparée en deux parties, il faut les démarrer toutes les
       - cd target
       - java -jar java-springboot-simplecrud-0.0.1-SNAPSHOT.jar"
 	  
+### Lancer l'application Angular
+Ce projet a été généré avec Angular CLI 1.6.5
+Cloner ou télécharger le dossier front-end https://github.com/milk42/FilRougeV2Front.git
+
+- Télécharger NodeJs https://nodejs.org/en/
+Dans le dossier du front, lancer une ligne de commande
+ - npm install
+ - ng server
+ 
+- Dans un navigateur internet, inscrire l'adresse http://localhost:4200/
+	
+
 # L'UML
 
 Dans ce dossier vous pouvez trouver les différents diagrammes et tables qui nous ont servis pour la conception de notre application.
