@@ -3,12 +3,16 @@
 ## Maquetter une application
 
 ### Faire un diagramme USE CASE
-![](diagramme_cas_utilisation.png)
+![](diagramme_cas_utilisation.png)  
 		
 ### Faire un diagramme d'activité
 [authentification](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_autentification.pdf)  
 [creation Arme](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_creationArme.pdf)  
 [creation Protagoniste](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_creationProtagoniste.pdf)  
+[creation Vehicule](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_creationVehicule.pdf)  
+[gérer les accès](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_gestionAcces.pdf)  
+[rechercher une arme](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_rechercheArme.pdf)  
+[rechercher un véhicule](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_rechercheVehicule.pdf)  
 
 
 ### Faire un diagramme des classes
@@ -16,46 +20,79 @@
         
         
 ### Identifier les acteurs d'un SI
-        
+Dans cette application, les acteurs sont :  
+Le chef de service  
+Un agent affecté à une affaire
+Un agent  
+Le personnel judiciaire
+
         
 ### Dessiner des wireframe ou mockup (écrans)
-        
+[Mockups](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/mockUp.bmpr)
+Le lien amène à un fichier à télécharger en cliquant sur View Raw. Le fichier mockUp.bmpr s'ouvre avec le logiciel Balsamiq  
+[télécharger Balsamiq](https://balsamiq.com/)
         
 ### Modéliser l'enchainement des écrans
-        
+L'enchainement des écrans peut se faire dans le mockUp en suivant la procédure :  
+Lancer balsamiq  
+Ouvrir le fichier précédemment téléchargé  
+Lancer le mode plein écran ou taper CTRL+F
         
         
 ## Concevoir une base de données
 
+### Epliquer le terme SGBDR
+Système de Gestion de Base de Données Relationnelle  
+Stocke les données de manière organisée et cohérente
+        
+        
+### Utiliser un outil graphique pour créer une base de données
+Pour générer la base de données nous avons utilisé le logiciel [MySQLWorkBench](https://www.mysql.com/fr/products/workbench/)
+        
+        
+### Créer/Modifier une table avec ses champs
 
+        
+        
+### Matérialiser une relation entre tables
+        
+        
+### Modéliser une base de données en 3ème forme normale
+        
+        
+### Je sais écrire une requête de création de table        
+### Je sais définir une clé primaire sur une table
+CREATE TABLE IF NOT EXISTS `gedesaft`.`affaires` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `dossier` VARCHAR(45) NULL DEFAULT NULL,
+  `lieu` VARCHAR(45) NULL DEFAULT NULL,
+  `dateOuverture` DATE NULL DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
 
-        ### Epliquer le terme SGBDR
         
-        
-        ### Utiliser un outil graphique pour créer une base de données
-        
-        
-        ### Créer/Modifier une table avec ses champs
-        
-        
-        ### Matérialiser une relation entre tables
-        
-        
-        ### Modéliser une base de données en 3ème forme normale
-        
-        
-        ### Je sais écrire une requête de création de table
-        
-        
-        ### Je sais définir une clé primaire sur une table
-        
-        
-        ### Je sais définir une clé étrangère sur une table
-        
-        
-        ### Je sais définir une contrainte sur une colonne donnée
-        
-        
+### Je sais définir une clé étrangère sur une table        
+### Je sais définir une contrainte sur une colonne donnée
+CREATE TABLE IF NOT EXISTS `gedesaft`.`agentaffecte` (
+  `id` INT(11) NOT NULL AUTO_INCREMENT,
+  `dateAffectation` VARCHAR(45) NULL DEFAULT NULL,
+  `affaires_id` INT(11) NOT NULL,
+  `agents_id` INT(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  INDEX `fk_AgentAffecte_affaires1_idx` (`affaires_id` ASC),
+  INDEX `fk_AgentAffecte_agents1_idx` (`agents_id` ASC),
+  CONSTRAINT `fk_AgentAffecte_affaires1`
+    FOREIGN KEY (`affaires_id`)
+    REFERENCES `gedesaft`.`affaires` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_AgentAffecte_agents1`
+    FOREIGN KEY (`agents_id`)
+    REFERENCES `gedesaft`.`agents` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);  
+
         
 ## Mettre en place une base de données
 
