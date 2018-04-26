@@ -3,7 +3,7 @@
 ## Maquetter une application
 
 ### Faire un diagramme USE CASE
-![](diagramme_cas_utilisation.PNG)
+![](diagrammeCasUtilisation.PNG)
 		
 ### Faire un diagramme d'activité
 [authentification](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/diagrammeActivite_autentification.pdf)  
