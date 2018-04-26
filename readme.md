@@ -5,9 +5,12 @@
 
 
         ### Faire un diagramme USE CASE
+        ![](https://raw.githubusercontent.com/rudylps/diagrammes_gedesaft_v2/master/diagramme_use_case.PNG)
+		
+	### Faire un diagramme d'activité
         
-        
-        ### Faire un diagramme des séquences
+        ### Faire un diagramme des classes
+        ![](https://raw.githubusercontent.com/rudylps/diagrammes_gedesaft_v2/master/DiagrammeClasses.PNG)
         
         
         ### Identifier les acteurs d'un SI
