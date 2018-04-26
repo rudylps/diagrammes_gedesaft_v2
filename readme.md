@@ -20,10 +20,6 @@ https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js/i
 https://nodejs.org/en/download/ (téléchargement)
 - Angular CLI (v1.6.5 +)
 lancer la ligne de commande "npm install @angular/cli" (nécéssite node.js)
- 
-un Environnement Developpement Intégré (Eclipse oxygen de préférence) peux être nécéssaire pour l'import et le lancement de l'application (voir section lancement de l'application 2. importer dans un EDI)
-
-
 
 
 ## IMPORT DU PROJET
