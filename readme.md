@@ -5,7 +5,7 @@
 
 
         ### Faire un diagramme USE CASE
-        [Diagramme cas d'utilisation](https://raw.githubusercontent.com/rudylps/diagrammes_gedesaft_v2/master/diagramme_use_case.PNG)
+        [Diagramme cas d'utilisation](https://github.com/rudylps/diagrammes_gedesaft_v2/blob/master/DiagrammeClasses.PNG)
 		
 		### Faire un diagramme d'activité
         
