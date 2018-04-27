@@ -187,29 +187,62 @@ Extrait du fichier :
 
         
         
-        ### Faire un formulaire de saisie
+### Faire un formulaire de saisie
+Exemple :  
+
+	<form #formCreate (ngSubmit)="onSubmit(formCreate)" class="">  
+                   
+                     
+                    <mat-form-field>  
+                      <input matInput type="text" name="dossier" placeholder="dossier"   
+                      [(ngModel)]="affaire.dossier">   
+                    </mat-form-field>  
+                
+              
+                    <mat-form-field class="">  
+                      <input matInput type="text" name="lieu" placeholder="lieu" [(ngModel)]="affaire.lieu">   
+                    </mat-form-field>  
+         
+                    <mat-form-field class="">  
+                      <input matInput type ="text"  name="dateOuverture" placeholder="date: aaaa/mm/jj"  
+                      [(ngModel)]="affaire.dateOuverture">  
+                      </mat-form-field>  
+
+      
+       <div class="ligne3">  
+            <button     
+            [ngStyle.sm]="{'width.%': 40, 'height.em': 4, 'border-radius.%': 0}"   
+            [ngStyle.xs]="{'width.%': 40, 'height.em': 4, 'border-radius.%': 0}"   
+            type="submit">Annuler</button>  
+
+            <button    
+            [ngStyle.sm]="{'width.%': 40, 'height.em': 4, 'border-radius.%': 0}"   
+            [ngStyle.xs]="{'width.%': 40, 'height.em': 4, 'border-radius.%': 0}"  
+            type="submit">Soumettre</button>  
+        </div>  
+      </form>  
         
         
         ### Mettre en place des procédures de contrôle de saisie
         
         
-        ### Faire un test unitaire manuel
+        ### Faire un test unitaire manuel  
         
-        ### Coder avec un langae orienté objet
+        ### Coder avec un langae orienté objet  
         
-        ### Connaître la programmation événementielle
+        ### Connaître la programmation événementielle  
         
-        ### Connaitre la programmation déclrative
+        ### Connaitre la programmation déclrative  
         
-        ### Utiliser un Environnement de Développement intégré (IDE)
+        ### Utiliser un Environnement de Développement intégré (IDE)  
         
-        ### Versionner mon travail
+        ### Versionner mon travail  
         
-        ### Mettre des commentaires dans mes programmes
+        ### Mettre des commentaires dans mes programmes  
         
-        ### Coder selon les règles de l'art
+        ### Coder selon les règles de l'art  
         
-        ### Produire un livrable
+        ### Produire un livrable  
 # GEDESAFT
 
 Afin de pourvoir installer et lancer l'application, il faut savoir utiliser les lignes de commandes
