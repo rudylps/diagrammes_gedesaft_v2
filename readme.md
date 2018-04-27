@@ -140,29 +140,49 @@ Depuis Workbench :
 	Faire un clic droit sur une table et sélectionner 'Table Data Export Wizard'
 	Suivre les consignes de la fenêtre qui s'ouvre pour exporter la table et ses données
 	Faire un clic droit sur une base de données et sélectionner 'Table Data Import Wizard'
-	Suivre les consignes de la fenêtre qui s'ouvre et sélectionner le fichier .sql correspondant pour l'importer dans la base.
+	Suivre les consignes de la fenêtre qui s'ouvre  
+	sélectionner le fichier .sql correspondant pour l'importer dans la base.
         
         
 ## Développer une interface utilisateur
 
 
+### Réaliser une interface graphique
+Pour réaliser l'interface graphique nous avons utilisé  
+L'IDE [Visual Studio Code](https://code.visualstudio.com/)  
+Le framework Angular 5  
+Les langages HTML5 CSS3 et TypeScript (sur-couche de JavaScript)  
+        
+### Appliquer une charte graphique
+Codes couleur principaux utilisés :
 
-        ### Réaliser une interface graphique
+	rgb(252, 204, 0)  
+	rgb(46, 156, 211)  
+	
+
+        
+### Analyser une maquette graphique et identifier les différentes parties d'un écran (zoning)
+Afin de réaliser la mise en place des différents écrans, nous avons utilisé les mockups réalisés à l'aide de Balsamiq
         
         
-        ### Appliquer une charte graphique
+### Faire un menu
+Le menu a été réalisé grâce aux composants [Angular Material](https://material.angular.io/)
         
         
-        ### Analyser une maquette graphique et identifier les différentes parties d'un écran (zoning)
+### Enchainer les écrans
+Nous enchaînons les écrans grâce aux chemins d'accès défini dans le routing-module d'Angular  
+Extrait du fichier :  
+	const routes: Routes = [
+	{path: '', redirectTo: '/accueil', pathMatch: 'full' },  
+	{path: 'accueil', component: AccueilComponent, data: { title: 'Component acceuil' }},  
+	{path: 'vehicules', component: VehiculesComponent, data: { title: 'Component vehicule' }, children: [  
+	{path: 'create', component: VAjoutComponent, data: { title: 'Component ajoutVehicule' }},  
+	{path: 'detail/:id', component: VDetailsComponent, data: { title: 'Component detailVehicule' }},  
+	]},
         
         
-        ### Faire un menu
-        
-        
-        ### Enchainer les écrans
-        
-        
-        ### Connaitre des composants graphiques qui permettent de créer un écran
+### Connaitre des composants graphiques qui permettent de créer un écran
+
         
         
         ### Faire un formulaire de saisie
