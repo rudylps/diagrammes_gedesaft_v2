@@ -93,7 +93,9 @@ Pour générer la base de données nous avons utilisé le logiciel [MySQLWorkBen
 ### Installer un SGBDR
 Lancer MySQL Workbench.  
 Ouvrir le fichier [gedesaft2BIS.mwb](gedesaft2BIS.mwb)  
-File -> Export -> Forward Engineer ... -> Next -> Next -> Finish  
+	File -> Export -> Forward Engineer SQL CREATE SCRIPT ->  
+	Choisir le dossier où sauvegarder le ficher SQL -> Next -> Next -> Finish  
+Ouvrir ce fichier SQL avec Worbench  
         
         
 ### Créer des rôles et une base
