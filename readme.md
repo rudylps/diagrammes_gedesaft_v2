@@ -229,30 +229,30 @@ Pour l'immatriculation des voitures, une regex a été créée côté back-end. 
 ### Faire un test unitaire manuel  
 Exemple d'un test crée pour tester la méthose getVehiculeDetail grâce à la librairie Mockito :  
 
-	package filrouge.gedesaft;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mockito;
-import org.skyscreamer.jsonassert.JSONAssert;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.RequestBuilder;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-
-import filrouge.gedesaft.controller.VehiculeController;
-import filrouge.gedesaft.dao.JdbcVehiculeDAO;
-import filrouge.gedesaft.model.Vehicule;
-import filrouge.gedesaft.service.VehiculeService;
-
-@RunWith(SpringRunner.class)
-@WebMvcTest(value=VehiculeController.class, secure=false)
-public class VehiculeControllerTest {
-
+	package filrouge.gedesaft;  
+	import org.junit.Test;  
+	import org.junit.runner.RunWith;  
+	import org.mockito.Mockito;  
+	import org.skyscreamer.jsonassert.JSONAssert;  
+	import org.springframework.beans.factory.annotation.Autowired;  
+	import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;  
+	import org.springframework.boot.test.mock.mockito.MockBean;  
+	import org.springframework.http.MediaType;  
+	import org.springframework.test.context.junit4.SpringRunner;  
+	import org.springframework.test.web.servlet.MockMvc;  
+	import org.springframework.test.web.servlet.MvcResult;  
+	import org.springframework.test.web.servlet.RequestBuilder;  
+	import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;  
+  	  
+	import filrouge.gedesaft.controller.VehiculeController;	  
+	import filrouge.gedesaft.dao.JdbcVehiculeDAO;  
+	import filrouge.gedesaft.model.Vehicule;  
+	import filrouge.gedesaft.service.VehiculeService;  
+  
+	@RunWith(SpringRunner.class)  
+	@WebMvcTest(value=VehiculeController.class, secure=false)  
+	public class VehiculeControllerTest {  
+  
 	@Autowired  
 	private MockMvc mockMvc;  
 	  
