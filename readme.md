@@ -134,7 +134,13 @@ Ouvrir Workbench
 	values (8, 'Krissy', 'Jiaoxie', '2017-08-28');
         
         
-        ### Exporter une structure de tables (données comprises) et la réintégrer dans une autre base de données
+### Exporter une structure de tables (données comprises) et la réintégrer dans une autre base de données
+Depuis Workbench :  
+
+	Faire un clic droit sur une table et sélectionner 'Table Data Export Wizard'
+	Suivre les consignes de la fenêtre qui s'ouvre pour exporter la table et ses données
+	Faire un clic droit sur une base de données et sélectionner 'Table Data Import Wizard'
+	Suivre les consignes de la fenêtre qui s'ouvre et sélectionner le fichier .sql correspondant pour l'importer dans la base.
         
         
 ## Développer une interface utilisateur
