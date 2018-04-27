@@ -223,26 +223,28 @@ Exemple :
       </form>  
         
         
-        ### Mettre en place des procédures de contrôle de saisie
+### Mettre en place des procédures de contrôle de saisie
+Pour l'immatriculation des voitures, une regex a été créée côté back-end. Côté Front-end, un attribut required a été ajouté dans l'input correspondant
         
+### Faire un test unitaire manuel  
         
-        ### Faire un test unitaire manuel  
+### Coder avec un langae orienté objet  
         
-        ### Coder avec un langae orienté objet  
+### Connaître la programmation événementielle  
         
-        ### Connaître la programmation événementielle  
+### Connaitre la programmation déclrative  
         
-        ### Connaitre la programmation déclrative  
+### Utiliser un Environnement de Développement intégré (IDE)  
         
-        ### Utiliser un Environnement de Développement intégré (IDE)  
+### Versionner mon travail  
         
-        ### Versionner mon travail  
+### Mettre des commentaires dans mes programmes  
         
-        ### Mettre des commentaires dans mes programmes  
+### Coder selon les règles de l'art  
         
-        ### Coder selon les règles de l'art  
-        
-        ### Produire un livrable  
+### Produire un livrable   
+
+
 # GEDESAFT
 
 Afin de pourvoir installer et lancer l'application, il faut savoir utiliser les lignes de commandes
