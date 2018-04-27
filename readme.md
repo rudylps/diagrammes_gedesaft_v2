@@ -172,6 +172,7 @@ Le menu a été réalisé grâce aux composants [Angular Material](https://mater
 ### Enchainer les écrans
 Nous enchaînons les écrans grâce aux chemins d'accès défini dans le routing-module d'Angular  
 Extrait du fichier :  
+
 	const routes: Routes = [
 	{path: '', redirectTo: '/accueil', pathMatch: 'full' },  
 	{path: 'accueil', component: AccueilComponent, data: { title: 'Component acceuil' }},  
@@ -179,7 +180,8 @@ Extrait du fichier :
 	{path: 'create', component: VAjoutComponent, data: { title: 'Component ajoutVehicule' }},  
 	{path: 'detail/:id', component: VDetailsComponent, data: { title: 'Component detailVehicule' }},  
 	]},
-        
+ 
+
         
 ### Connaitre des composants graphiques qui permettent de créer un écran
 
