@@ -92,19 +92,46 @@ Pour générer la base de données nous avons utilisé le logiciel [MySQLWorkBen
 
 ### Installer un SGBDR
 Lancer MySQL Workbench.  
-Ouvrir le fichier [gedesaft2BIS.mwb](gedesaft2BIS.mwb)  
+Ouvrir le fichier [gedesaft2BIS.mwb](gedesaft2BIS.mwb) 
+
 	File -> Export -> Forward Engineer SQL CREATE SCRIPT ->  
 	Choisir le dossier où sauvegarder le ficher SQL -> Next -> Next -> Finish  
-Ouvrir ce fichier SQL avec Worbench  
+	
+Ouvrir Workbench  
+
+	File -> RunSQL Script -> Récupérer le fichier SQL généré -> Run  
+
         
         
 ### Créer des rôles et une base
         
         
-        ### Exécuter un script de création de tables / données (fichier.sql)
+### Exécuter un script de création de tables / données (fichier.sql)
+	CREATE TABLE IF NOT EXISTS `gedesaft`.`affaires` (  
+  	`id` INT(11) NOT NULL AUTO_INCREMENT,  
+  	`dossier` VARCHAR(45) NULL DEFAULT NULL,  
+  	`lieu` VARCHAR(45) NULL DEFAULT NULL,  
+  	`dateOuverture` DATE NULL DEFAULT NULL,  
+  	PRIMARY KEY (`id`),  
+  	UNIQUE INDEX `id_UNIQUE` (`id` ASC));  
         
-        
-        ### Ecrire une requête pour insérer des données dans une table
+### Ecrire une requête pour insérer des données dans une table
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (1, 'Theodora', 'Siemkowice', '2017-06-11');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (2, 'Filip', 'Srono', '2018-02-13');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (3, 'Kessia', 'Hidalgo', '2017-08-28');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (4, 'Birgitta', 'Santa Rosa', '2017-09-23');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (5, 'Chiarra', 'Rungis', '2017-06-13');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (6, 'Barbe', 'Merrifield', '2017-11-27');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (7, 'Valry', 'Glempang Tengah', '2017-05-26');
+	insert into gedesaft.affaires (id, dossier, lieu, dateOuverture)  
+	values (8, 'Krissy', 'Jiaoxie', '2017-08-28');
         
         
         ### Exporter une structure de tables (données comprises) et la réintégrer dans une autre base de données
