@@ -65,35 +65,37 @@ Pour générer la base de données nous avons utilisé le logiciel [MySQLWorkBen
         
 ### Je sais définir une clé étrangère sur une table        
 ### Je sais définir une contrainte sur une colonne donnée
-CREATE TABLE IF NOT EXISTS `gedesaft`.`agentaffecte` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `dateAffectation` VARCHAR(45) NULL DEFAULT NULL,
-  `affaires_id` INT(11) NOT NULL,
-  `agents_id` INT(11) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC),
-  INDEX `fk_AgentAffecte_affaires1_idx` (`affaires_id` ASC),
-  INDEX `fk_AgentAffecte_agents1_idx` (`agents_id` ASC),
-  CONSTRAINT `fk_AgentAffecte_affaires1`
-    FOREIGN KEY (`affaires_id`)
-    REFERENCES `gedesaft`.`affaires` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_AgentAffecte_agents1`
-    FOREIGN KEY (`agents_id`)
-    REFERENCES `gedesaft`.`agents` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION);  
+	CREATE TABLE IF NOT EXISTS `gedesaft`.`agentaffecte` (
+  	`id` INT(11) NOT NULL AUTO_INCREMENT,
+  	`dateAffectation` VARCHAR(45) NULL DEFAULT NULL,
+  	`affaires_id` INT(11) NOT NULL,
+  	`agents_id` INT(11) NOT NULL,
+  	PRIMARY KEY (`id`),
+  	UNIQUE INDEX `id_UNIQUE` (`id` ASC),
+  	INDEX `fk_AgentAffecte_affaires1_idx` (`affaires_id` ASC),
+  	INDEX `fk_AgentAffecte_agents1_idx` (`agents_id` ASC),
+  	CONSTRAINT `fk_AgentAffecte_affaires1`
+    	FOREIGN KEY (`affaires_id`)
+    	REFERENCES `gedesaft`.`affaires` (`id`)
+    	ON DELETE NO ACTION
+    	ON UPDATE NO ACTION,
+  	CONSTRAINT `fk_AgentAffecte_agents1`
+    	FOREIGN KEY (`agents_id`)
+    	REFERENCES `gedesaft`.`agents` (`id`)
+    	ON DELETE NO ACTION
+    	ON UPDATE NO ACTION);  
 
         
 ## Mettre en place une base de données
 
 
 
-        ### Installer un SGBDR
+### Installer un SGBDR
+Lancer MySQL Workbench.
+Ouvrir le fichier gedesaft2BIS.mwb
         
         
-        ### Créer des rôles et une base
+### Créer des rôles et une base
         
         
         ### Exécuter un script de création de tables / données (fichier.sql)
