@@ -397,19 +397,30 @@ TypeScript étant un langage orienté objet, nous avons défini toutes nos class
 	}  
   
         
-### Connaître la programmation événementielle  
-        
-### Connaitre la programmation déclrative  
-        
+### Connaître la programmation événementielle 
+Exemple de programmation évènementielle utilisée dans notre projet :  
+Appel à la fonction afficherId dans le code HTML,  
+
+	<button (click)="afficherId(element.id)" mat-button color="primary" >Détail</button>  
+
+Cette fonction se trouve dans le fichier .ts associé.  
+
+	afficherId(id) {  
+	this.router.navigate(['detail', id], {relativeTo: this.route});  
+	}  
+	    
 ### Utiliser un Environnement de Développement intégré (IDE)  
+Pour rappel, nous avons utilisé VSC pour le front-end, Eclipse Oxygen pour le back-end. 
         
 ### Versionner mon travail  
+Pour versionner notre travail nous avons utilisé GitBash et GitHub.
         
-### Mettre des commentaires dans mes programmes  
+### Mettre des commentaires dans mes programmes 
+### Coder selon les règles de l'art 
+Se référer au code dans les différents fichiers
         
-### Coder selon les règles de l'art  
-        
-### Produire un livrable   
+### Produire un livrable 
+Pour produire un livrable, suivre les instructions ci-dessous
 
 
 # GEDESAFT
