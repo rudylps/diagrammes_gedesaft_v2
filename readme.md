@@ -484,16 +484,6 @@ Dans le dossier du front, lancer une ligne de commande
  - ng serve
  
 - Dans un navigateur internet, inscrire l'adresse http://localhost:4200/
-	
 
-# L'UML
-
-Dans ce dossier vous pouvez trouver les différents diagrammes et tables qui nous ont servis pour la conception de notre application.
-Les diagrammes ont été réalisé pour la première version de GEDESAFT et peuvent ne plus correspondre exactement à l'actuelle application.
-
-## Les mockups
-
-- Pour lire le fichier **mockUp.bmpr**, il faut le programme Balsamiq
-https://balsamiq.com/
-- Ensuite, ouvrir **mockUp.bmpr**.
-Faire **Ctrl + F** afin de lancer le plein écran et les fonctionnalités d'enchainement des écrans matérialisants les hyperliens
+# REMERCIEMENTS
+Nous tenons à remercier les collègues pour leur aide, les professeurs pour leur soutien et Simplon pour leur patience!
