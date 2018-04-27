@@ -51,24 +51,16 @@ Pour générer la base de données nous avons utilisé le logiciel [MySQLWorkBen
         
         
 ### Créer/Modifier une table avec ses champs
-
-        
-        
 ### Matérialiser une relation entre tables
-        
-        
-### Modéliser une base de données en 3ème forme normale
-        
-        
 ### Je sais écrire une requête de création de table        
 ### Je sais définir une clé primaire sur une table
-CREATE TABLE IF NOT EXISTS `gedesaft`.`affaires` (
-  `id` INT(11) NOT NULL AUTO_INCREMENT,
-  `dossier` VARCHAR(45) NULL DEFAULT NULL,
-  `lieu` VARCHAR(45) NULL DEFAULT NULL,
-  `dateOuverture` DATE NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `id_UNIQUE` (`id` ASC));
+	CREATE TABLE IF NOT EXISTS `gedesaft`.`affaires` (  
+  	`id` INT(11) NOT NULL AUTO_INCREMENT,  
+  	`dossier` VARCHAR(45) NULL DEFAULT NULL,  
+  	`lieu` VARCHAR(45) NULL DEFAULT NULL,  
+  	`dateOuverture` DATE NULL DEFAULT NULL,  
+  	PRIMARY KEY (`id`),  
+  	UNIQUE INDEX `id_UNIQUE` (`id` ASC));  
 
         
 ### Je sais définir une clé étrangère sur une table        
